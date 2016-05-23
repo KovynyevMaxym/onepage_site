@@ -1,6 +1,6 @@
-* {
+/** {
     box-sizing: border-box;
-}
+}*/
 body {
     color: grey;
 }
@@ -18,4 +18,7 @@ article {
 }
 nav {
     color: yellow;
+}
+div {
+    background-color: black;
 }
