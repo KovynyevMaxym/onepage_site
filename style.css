@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    color: grey;
+}
+header {
+    background-color: red;
+}
+secction {
+    color: green;
+}
+footer {
+    color: blue;
+}
+article {
+    color: pink;
+}
+nav {
+    color: yellow;
+}
