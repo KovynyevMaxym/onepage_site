@@ -18,32 +18,39 @@ body {
 }
 header {
     background-color: yellow;
-    margin: 10px;
-    }
+    padding: 5px;
+    margin: 5px;
+}
 nav {
     background-color: cyan;
-    margin: 0px auto;
-    padding: 5px;
-    height: auto;
-    border-bottom: 2px solid blue;
-}
+    border-bottom: 3px solid blue;
+    
+}    
 nav div  {
     display: inline-block;
+    margin: 1px auto;
+    width: 110px;
+    border: 2px solid black;
+    border-radius: 5px;
 }
 nav div a {
-    margin: 2px;
-    border: 2px solid black;
-    border-radius: 3px;
-    }
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+a {
+    text-align: center;
+}
 section {
     background-color: yellow;
     margin: 5px;
-    }
-footer {
-    background-color: yellow;
-    margin: 5px;
-}    
+}
 article {
     background-color: cyan;
     margin: 5px;
 }
+footer {
+    background-color: yellow;
+    margin: 5px;
+}    
+
