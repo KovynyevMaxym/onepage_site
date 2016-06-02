@@ -18,36 +18,58 @@ body {
 }
 header {
     background-color: yellow;
-    padding: 5px;
-    margin: 5px;
+    padding: 0px;
+    margin-top:-5px;
+    width: 100%;
+    position: fixed;
 }
 nav {
     background-color: cyan;
     border-bottom: 3px solid blue;
-    
+        /*float: center;*/
+    /* 
+   display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-around;*/
+
 }    
 nav div  {
+    /*float: center;*/
     display: inline-block;
-    margin: 1px auto;
-    width: 110px;
-    border: 2px solid black;
+    margin: 5px;
+    width: 100px;
+    border: 3px solid black;
     border-radius: 5px;
+    text-align: center;
+    background-color: white;
 }
 nav div a {
     text-decoration: none;
     color: black;
-    text-align: center;
-}
-a {
-    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
 }
 section {
     background-color: yellow;
     margin: 5px;
+    overflow-y: auto;
+    padding-top: 20px;
 }
 article {
     background-color: cyan;
     margin: 5px;
+}
+article div {
+    margin: auto;
+    height: 100%;
+    font-family: italic;
+    font-weight: bold;
+    font-size: 10px;
+    width: 95%;
+    max-width: 500px;
+    text-align: center;
 }
 footer {
     background-color: yellow;
