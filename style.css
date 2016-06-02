@@ -15,13 +15,14 @@
 }*/
 body {
     background-color:red;
+    width: 100%;
 }
 header {
     background-color: yellow;
     padding: 0px;
     margin-top:-5px;
     width: 100%;
-    position: fixed;
+    position: /*fixed*/;
 }
 nav {
     background-color: cyan;
@@ -53,24 +54,36 @@ nav div a {
 }
 section {
     background-color: yellow;
-    margin: 5px;
     overflow-y: auto;
-    padding-top: 20px;
+    margin: 0px auto;
+    width: 800px;
 }
 article {
     background-color: cyan;
-    margin: 5px;
+    margin: 0px auto;
+    padding: 5px 0px;
+    width: 90%;
 }
 article div {
-    margin: auto;
-    height: 100%;
-    font-family: italic;
-    font-weight: bold;
     font-size: 10px;
-    width: 95%;
-    max-width: 500px;
-    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin: 20px auto;
+    width: 80%;    
 }
+ h1 {
+    font-size: 14px;
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 10px;
+}
+ p {
+    font-size: 12px;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px 50px 20px 50px;
+    
 footer {
     background-color: yellow;
     margin: 5px;
