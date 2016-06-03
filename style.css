@@ -6,8 +6,12 @@
 body {
     margin: 0px auto;
     width: 100%;
-    background-image: url(img/main_screen_bg.jpg);
+    background-color: rgb(250, 218, 255, 0.8);
 }
+/*img {*/
+/*    position: inherit;*/
+/*    opacity: 0.8;*/
+/*}*/
 header {
     background-color: black;
     padding: 0px;
