@@ -4,20 +4,24 @@
     padding: 0px;
 }
 body {
-    background-color:red;
+    background-color:white;
     margin: 0px auto;
     width: 100%;
+    
 }
 header {
     background-color: green;
     padding: 0px;
     margin: -5px auto 0px auto;
-    margin-top:-5px;
-    width: 800px;
+    margin-top:0px;
+    width: 100%;
 }
 nav {
-    background-color: cyan;
-    border-bottom: 3px solid blue;
+    background-color: black;
+    border-color: black;
+    display: flex;
+    justify-content:center; 
+    /*border-bottom: 3px solid blue;*/
     /*display: -webkit-box;*/
     /*display: -ms-flexbox;*/
     /*display: -webkit-flex;*/
@@ -26,41 +30,55 @@ nav {
 
 }    
 nav div  {
-    /*float: center;*/
     display: inline-block;
     margin: 5px;
     width: 100px;
-    border: 3px solid black;
-    border-radius: 1px;
     text-align: center;
+    background-color: black;
+}
+nav div:hover {
+    display: inline-block;
+    margin: 5px;
+    width: 100px;
+    text-align: center;
+    color: black;
     background-color: white;
-    
 }
 nav div a {
     text-decoration: none;
-    color: black;
     font-size: 14px;
     font-weight: bold;
+    color: white;
+}
+nav div a:hover {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
 }
 section {
-    background-color: yellow;
+    background-color: white;
     /*overflow-y: auto;*/
     margin: 0px auto;
-    width: 800px;
+    width: 100%;
 }
 article {
-    background-color: cyan;
+    background-color: white;
     margin: 0px auto;
     padding: 5px 0px;
     width: 90%;
+    max-width: 700px;
 }
 article div {
     font-size: 10px;
     background-color: black;
     color: white;
-    border-radius: 15px;
+    border-radius: 5px;
     margin: 20px auto;
-    width: 80%;    
+    width: 90%;    
+}
+article div.advertising1 {
+    background-color: yellow;
 }
  h1 {
     font-size: 14px;
@@ -83,8 +101,8 @@ footer {
 
 /*****footer *****/
 div#string {
-  height: 4px;
-  background-color: deepskyblue; 
+  height: 1px;
+  background-color: grey; 
   margin: 0 auto;
   padding: 0px;
 }
@@ -131,52 +149,40 @@ footer div p  {
 }
 
 
-@media all and (max-width: 816px) {
-nav {
-    background-color: cyan;
-    border-bottom: 3px solid blue;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    justify-content: space-between;
-}
-body {
-    max-width: 816px;
-}
-section {
-    width: 100%;
-}
-article {
-    width: 90%;
-}
-footer {
-    width: 100%;
-}    
-footer div p  {
-  padding: 0px 90px 0px 10px;
-  margin: 0px;
-}
-}
+/*@media all and (max-width: 816px) {*/
+
+/*body {*/
+/*    max-width: 816px;*/
+/*}*/
+/*section {*/
+/*    width: 100%;*/
+/*}*/
+/*article {*/
+/*    width: 90%;*/
+/*}*/
+/*footer {*/
+/*    width: 100%;*/
+/*}    */
+/*footer div p  {*/
+/*  padding: 0px 90px 0px 10px;*/
+/*  margin: 0px;*/
+/*}*/
+/*}*/
 
 @media all and (max-width: 700px) {
 nav {
-    background-color: cyan;
-    border-bottom: 3px solid blue;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    justify-content: space-between;
+    background-color: black;
+    /*border-bottom: 3px solid blue;*/
+    /*display: -webkit-box;*/
+    /*display: -ms-flexbox;*/
+    /*display: -webkit-flex;*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
 }
-body {
-    max-width: 700px;
-}
-section {
-    width: 100%;
-}
+
 article {
     width: 100%;
+    max-width: 650px;
 }
 article div {
     font-size: 10px;
@@ -199,3 +205,20 @@ footer div p  {
   margin: 0px 0px 0px 0px;
 }
 }
+  
+@media all and (max-width: 240px) {
+nav div  {
+    display: inline-block;
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+nav div:hover {
+    display: inline-block;
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+    color: black;
+    background-color: white;
