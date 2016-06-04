@@ -64,13 +64,13 @@ section {
     width: 100%;
 }
 section #adv1 {
-    background-color: #80e5ff;
+    background-color: rgb(242, 242, 242);
 }
 section #adv2 {
-    background-color: #ffff66;
+    background-color: rgb(26, 198, 255);
 }
 section #adv3 {
-    background-color: #80e5ff;
+    background-color: rgb(242, 242, 242);
 }
 article {
     /*background-color: white;*/
@@ -93,19 +93,18 @@ article div h1 {
     text-align: center;
     padding-top: 5px;
     color: black;
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 5px 5px 0px 0px;
+    /*background-color: white;*/
+    /*border: 1px solid black;*/
+    /*border-radius: 5px 5px 0px 0px;*/
 }
 article div p {
     font-size: 12px;
     font-family: sans-serif;
     text-align: center;
     padding: 20px 30px 20px 30px;
-    /*background-color: black;*/
-    color: black;
-    border: 1px solid black;
-    border-radius: 0px 0px 5px 5px;
+    /*color: black;*/
+    /*border: 1px solid black;*/
+    /*border-radius: 0px 0px 5px 5px;*/
  }    
 footer {
     background-color: white;
