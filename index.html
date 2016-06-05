@@ -1,9 +1,13 @@
 <!DOCTYPE html>
+<html lang="en">
 <html>
     <head>
         <title>main_page</title>
         <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-        <link rel="stylesheet" href="style.css" type="text/css" />
+        <link rel="stylesheet" href="style.css"/>
+        <!--<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<script src="slide_show.js"></script>-->
     </head>
     <body> 
         <header>
@@ -20,6 +24,12 @@
             <article id="adv1">
                 <div span="advertising1"> 
                 <h1>Site Development</h1>
+                <div id="hr"></div>
+                <div class="w3-content w3-section" style="max-width:400px">
+                <img class="mySlides w3-animate-fading" src="img/nature/nature1.jpg" style="width:100%">
+                <img class="mySlides w3-animate-fading" src="img/nature/nature2.jpg" style="width:100%">
+                <img class="mySlides w3-animate-fading" src="img/nature/nature3.jpg" style="width:100%">
+            </div>
                         <p> UKRSOCPROJECT offers full cycle of service for the identification of projects, 
                             their design and construction, as well as fundraising. These include: analysis of the system and its performance, 
                             including the comparative; •	planning activities and investments to optimize energy efficiency, taking into 
@@ -46,7 +56,7 @@
                 <!--        </p> -->
                 <!--</div>-->
             </article>
-            <div id="string"></div>
+            <!--<div id="string"></div>-->
             <article id="adv2">
                 <div span="advertising2"> 
                 <h1>Site Development</h1>
@@ -76,7 +86,7 @@
                 <!--        </p> -->
                 <!--</div>-->
             </article>
-            <div id="string"></div>
+            <!--<div id="string"></div>-->
             <article id="adv3">
                 <div span="advertising3"> 
                 <h1>Site Development</h1>
@@ -117,6 +127,22 @@
                           <div class="partners"><a href="http://www.aea.org.ua/" target="_blank"><img  class="logo" src="img/aea.png" alt="AEA"></a></div>
                           <div class="partners"><a href="http://www.usp.kiev.ua/" target="_blank"><img class="logo" src="img/logo_usp.png" alt="UKRSOCPROJECT"></a></div>
                       </div>
-</footer>
-    </body>
+        </footer>
+        <script>
+            var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 9000);    
+}
+        </script>
+</body> 
 </html>
