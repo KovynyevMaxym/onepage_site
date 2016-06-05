@@ -25,11 +25,11 @@
                 <div span="advertising1"> 
                 <h1>Site Development</h1>
                 <div id="hr"></div>
-                <div class="w3-content w3-section" style="max-width:400px">
-                <img class="mySlides w3-animate-fading" src="img/nature/nature1.jpg" style="width:100%">
-                <img class="mySlides w3-animate-fading" src="img/nature/nature2.jpg" style="width:100%">
-                <img class="mySlides w3-animate-fading" src="img/nature/nature3.jpg" style="width:100%">
-            </div>
+                <div class="w3-content w3-section" style="max-width:500px">
+                    <img class="mySlides w3-animate-fading" src="img/nature/nature1.jpg" style="width:100%">
+                    <img class="mySlides w3-animate-fading" src="img/nature/nature2.jpg" style="width:100%">
+                    <img class="mySlides w3-animate-fading" src="img/nature/nature3.jpg" style="width:100%">
+                </div>
                         <p> UKRSOCPROJECT offers full cycle of service for the identification of projects, 
                             their design and construction, as well as fundraising. These include: analysis of the system and its performance, 
                             including the comparative; •	planning activities and investments to optimize energy efficiency, taking into 
@@ -59,7 +59,12 @@
             <!--<div id="string"></div>-->
             <article id="adv2">
                 <div span="advertising2"> 
-                <h1>Site Development</h1>
+                <h1>Site Optimization</h1>
+                <!--<div class="w3-content w3-section" style="max-width:400px">-->
+                <!--    <img class="myTlides w3-animate-fading" src="img/nature/nature1.jpg" style="width:100%">-->
+                <!--    <img class="myTlides w3-animate-fading" src="img/nature/nature2.jpg" style="width:100%">-->
+                <!--    <img class="myTlides w3-animate-fading" src="img/nature/nature3.jpg" style="width:100%">-->
+                <!--</div>-->
                         <p> UKRSOCPROJECT offers full cycle of service for the identification of projects, 
                             their design and construction, as well as fundraising. These include: analysis of the system and its performance, 
                             including the comparative; •	planning activities and investments to optimize energy efficiency, taking into 
@@ -128,21 +133,30 @@
                           <div class="partners"><a href="http://www.usp.kiev.ua/" target="_blank"><img class="logo" src="img/logo_usp.png" alt="UKRSOCPROJECT"></a></div>
                       </div>
         </footer>
-        <script>
-            var myIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
+     <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 9000);  
+        // var y = document.getElementsByClassName("myTlides");
+        // for (i = 0; i < y.length; i++) {
+        //   y[i].style.display = "none";  
+        // }
+        // myIndex++;
+        // if (myIndex > y.length) {myIndex = 1}    
+        // y[myIndex-1].style.display = "block";  
+        // setTimeout(carousel, 9000);    
+        
     }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 9000);    
-}
-        </script>
+     </script>
 </body> 
 </html>
